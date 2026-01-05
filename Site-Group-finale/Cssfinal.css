@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F5DC;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Cinzel', serif;
+}
+.Accueil{
+    background-image: url("./images/MAMAMIA-RESAURANT-TERASSE.png");
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: rgb(84, 38, 48);
+    padding: 20px 40px;
+}
+
+header .titre {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav li img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/*  Footer  */
+footer {
+    background-color: rgb(84, 38, 48);
+    color: white;
+    text-align: center;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    width: 100%;
+}
+/*  Story Page  */
+.story-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.story-container img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+    transition: transform 0.5s ease;
+}
+
+.story-container img:hover {
+    transform: scale(1.05);
+}
+
+.story-container p {
+    max-width: 900px;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/*  Gallery Page */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 9px;
+    padding: 40px 20px;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.gallery-grid img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/*  Menu Page  */
+main {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.titremenu {
+    font-size: 5rem;
+    text-align: center;
+    border: 3px solid black;
+    background-color: #440f1ee6;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.menu-section {
+    width: 90%;
+    max-width: 900px;
+    background-color: #440f1ee6;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.menu-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section li {
+    margin-bottom: 15px;
+}
+
+.menu-section strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #b3b3a3;
+}
+
+
+/*  Contact Page  */
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    padding: 80px 20px;
+    background-color: #F5F5DC; 
+}
+
+.contact-container {
+    background-color: white;
+    padding: 40px 30px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.contact-container h2 {
+    text-align: center;
+    color: rgb(84, 38, 48);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.contact-container label {
+    display: block;
+    font-weight: bold;
+    color: rgb(84, 38, 48);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: rgb(84, 38, 48);
+    outline: none;
+}
+
+.contact-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(84, 38, 48);
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.contact-container input[type="submit"]:hover {
+    background-color: rgb(65, 28, 36);
+}
+
+.sctn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.Menu {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 20px 50px;
+    font-size: 3rem; 
+    font-weight: 700;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+}
+
+.Menu:hover {
+    transform: scale(1.05);
+}
